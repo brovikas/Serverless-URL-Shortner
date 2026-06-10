@@ -5,7 +5,7 @@ import QRCodeCard from "./QRCodeCard.jsx";
 import api from "../services/api";
 
 export default function UrlForm() {
-  const [url, setUrl] = useState("");
+  const [url, setUrl] = useState("https://");
   const [shortUrl, setShortUrl] = useState("");
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -70,7 +70,7 @@ export default function UrlForm() {
           >
             <input
               type="url"
-              placeholder="Paste your long URL here..."
+              placeholder="Put Your URL here..."
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               required
