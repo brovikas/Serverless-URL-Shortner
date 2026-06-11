@@ -6,7 +6,7 @@ export default function QRCodeCard({ url }) {
 
   const downloadQR = () => {
     const canvas = qrRef.current?.querySelector("canvas");
-
+    
     if (!canvas) return;
 
     const link = document.createElement("a");

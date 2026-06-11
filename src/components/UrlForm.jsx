@@ -19,13 +19,12 @@ export default function UrlForm() {
       const res = await api.post("/shorten", {
         originalUrl: url,
       });
-      console.log("Response:", res.data);
       
       setShortUrl(res.data.shortUrl);
       setUrl("");
       
     } catch (error) {
-      console.error(error);
+     // console.error(error);
       alert("Failed to shorten URL");
     } finally {
       setLoading(false);

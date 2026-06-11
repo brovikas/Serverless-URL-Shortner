@@ -19,11 +19,10 @@ export default async function handler(req, res) {
 
     url.clicks += 1;
     await url.save();
-
     return res.redirect(url.originalUrl);
+    
   } catch (error) {
-    console.log("Got Error:", error);
-
+    //console.log("Got Error:", error);
     return res.status(500).json({
       message: "Internal server error",
     });

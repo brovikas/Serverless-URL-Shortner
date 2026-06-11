@@ -14,9 +14,7 @@ export default async function handler(req, res) {
 
     const { originalUrl } = req.body;
     if (!originalUrl) {
-      
-      console.log("Nhi mila Orginal Url")
-      
+     // console.log("Nhi mila Orginal Url")
       return res.status(400).json({
         message: "URL Required!",
       });
