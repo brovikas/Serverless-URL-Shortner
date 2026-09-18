@@ -200,15 +200,7 @@ This project covers the following full-stack concepts:
 - CI/CD via Vercel's GitHub integration
 - Git workflow and version control best practices
 
----
 
-## Internship Context
-
-> Developed as part of the **CodTech IT Solutions** internship program.
->
-> **Intern:** Vikas Sharma | **ID:** CITS2901 | **Duration:** 4 Weeks
-
----
 
 ## License
 
